@@ -86,7 +86,6 @@ export default {
       this.tooltip = null;
     },
     openItem(item) {
-      console.log(item);
       this.$emit("openItem", item);
     }
   }
