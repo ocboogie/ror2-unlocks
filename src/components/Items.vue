@@ -40,7 +40,8 @@ export default {
         )
         .map(item => ({
           ...item,
-          icon: require("../assets/icons/" + item.icon)
+          iconName: item.icon,
+          icon: require("../assets/icons/" + item.icon + ".jpeg")
         }))
         .sort((a, b) => {
           let aTier = tierNumbers[a.tier];

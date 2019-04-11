@@ -1,7 +1,6 @@
 <template>
   <div
     class="item"
-    :style="{ backgroundImage: `url(${bg})` }"
     tabindex="0"
     @focus="openTooltip"
     @mouseover="openTooltip"
@@ -14,17 +13,6 @@
 </template>
 <script>
 export default {
-  computed: {
-    bg() {
-      if (this.type === "equipment") {
-        return require(`../assets/BGs/tex${
-          this.isLunar ? "Lunar" : "Equipment"
-        }BGIcon.png`);
-      }
-
-      return require(`../assets/BGs/tex${this.tier}BGIcon.png`);
-    }
-  },
   props: {
     codeName: {
       type: String,
@@ -57,6 +45,10 @@ export default {
     unlock: {
       type: String,
       default: null
+    },
+    iconName: {
+      type: String,
+      required: true
     }
   },
   methods: {
@@ -76,6 +68,7 @@ export default {
         name: this.name,
         tier: this.tier,
         icon: this.icon,
+        iconName: this.iconName,
         description: this.description,
         type: this.type,
         isLunar: this.isLunar,

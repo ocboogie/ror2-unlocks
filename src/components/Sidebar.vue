@@ -32,13 +32,16 @@ export default {
         return "Equipment";
       }
       return `${tierDisplay[this.tier]} Item`;
+    },
+    icon() {
+      if (!this.iconName) {
+        return;
+      }
+
+      return require("../assets/icons-hi-res/" + this.iconName + ".png");
     }
   },
   props: {
-    icon: {
-      type: String,
-      default: null
-    },
     name: {
       type: String,
       default: null
@@ -60,6 +63,10 @@ export default {
       default: false
     },
     unlock: {
+      type: String,
+      default: null
+    },
+    iconName: {
       type: String,
       default: null
     }
