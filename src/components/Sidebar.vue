@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <div class="icon-container" v-if="icon">
-      <img :src="icon" alt="item icon" class="icon" />
+      <img v-if="iconLoaded" :src="icon" alt="item icon" class="icon" />
     </div>
 
     <div class="name" v-if="Boolean(name)">{{ name }}</div>
@@ -23,6 +23,7 @@
 import tierDisplay from "../assets/tierDisplay.json";
 
 export default {
+  data: () => ({ iconLoaded: false }),
   computed: {
     displayType() {
       if (this.type === "equipment") {
@@ -39,6 +40,24 @@ export default {
       }
 
       return require("../assets/icons-hi-res/" + this.iconName + ".png");
+    }
+  },
+  watch: {
+    iconName: {
+      handler(val, oldVal) {
+        if (val === oldVal || !this.icon) {
+          return;
+        }
+
+        this.iconLoaded = false;
+        const icon = new Image();
+
+        icon.onload = () => {
+          this.iconLoaded = true;
+        };
+        icon.src = this.icon;
+      },
+      immediate: true
     }
   },
   props: {
