@@ -1,30 +1,26 @@
 <template>
   <div class="home">
-    <navbar @searched="searched" />
-    <items @openItem="openItem" class="items" :search="searching" />
-
+    <div class="inner">
+      <navbar @searched="searched" />
+      <items @openItem="openItem" class="items" :search="searching" />
+    </div>
     <transition name="page-darken-fade">
       <div class="page-darken" v-if="expanded" @click="closeItem" />
     </transition>
-
     <sidebar class="sidebar" :class="{ expanded }" v-bind="openedItem" />
-
-    <background id="background" />
   </div>
 </template>
 
 <script>
-import Items from "./components/Items.vue";
-import Sidebar from "./components/Sidebar.vue";
-import Navbar from "./components/Navbar.vue";
-import Background from "./components/Background.vue";
+import Items from "../components/Items.vue";
+import Sidebar from "../components/Sidebar.vue";
+import Navbar from "../components/Navbar.vue";
 
 export default {
   components: {
     Items,
     Sidebar,
-    Navbar,
-    Background
+    Navbar
   },
   data: () => ({ openedItem: null, expanded: false, searching: "" }),
   methods: {
@@ -85,42 +81,11 @@ export default {
     }
   }
   .items {
-    margin: auto;
-    text-align: center;
-    max-width: 1250px;
     @media (min-width: 970px) {
       padding-right: $sidebarWidth;
     }
+    margin: auto;
+    max-width: 1250px;
   }
-}
-</style>
-<style lang="scss">
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-html {
-  box-sizing: border-box;
-}
-body {
-  @import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
-  font-family: roboto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-#background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -100;
 }
 </style>
