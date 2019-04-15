@@ -59,6 +59,7 @@ export default {
     bottom: 0;
     width: $sidebarWidth;
     position: fixed;
+    overflow-y: auto;
     transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
 
     @media (max-width: 970px) {
