@@ -2,7 +2,6 @@
   <div
     class="item"
     tabindex="0"
-    @focus="openTooltip"
     @mouseover="openTooltip"
     @mouseout="closeTooltip"
     @click="openItem"
