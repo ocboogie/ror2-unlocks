@@ -62,7 +62,7 @@ export default {
     overflow-y: auto;
     transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
 
-    @media (max-width: 970px) {
+    @include small {
       z-index: 20;
       width: 75%;
       transform: translateX(100%);
@@ -81,7 +81,7 @@ export default {
     position: fixed;
 
     background-color: rgba($color: black, $alpha: 0.6);
-    @media (min-width: 970px) {
+    @include notSmall {
       display: none;
     }
   }
@@ -89,7 +89,7 @@ export default {
     margin: auto;
     text-align: center;
     max-width: 1250px;
-    @media (min-width: 970px) {
+    @include notSmall {
       padding-right: $sidebarWidth;
     }
   }

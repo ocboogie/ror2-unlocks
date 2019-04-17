@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
 .navbar {
-  @media (min-width: 970px) {
+  @include notSmall {
     padding-right: $sidebarWidth;
   }
 

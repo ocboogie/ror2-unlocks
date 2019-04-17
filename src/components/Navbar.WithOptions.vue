@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-container {
-  @media (min-width: 970px) {
+  @include notSmall {
     padding-right: $sidebarWidth;
   }
 
