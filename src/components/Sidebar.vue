@@ -16,13 +16,17 @@
     <div class="description-label" v-if="Boolean(description)">
       Description:
     </div>
-    <div class="description" v-html="description" />
+    <description-renderer :description="description" />
   </div>
 </template>
 <script>
 import tierDisplay from "../assets/tierDisplay.json";
+import DescriptionRenderer from "./DescriptionRenderer.vue";
 
 export default {
+  components: {
+    DescriptionRenderer
+  },
   data: () => ({ iconLoaded: false }),
   computed: {
     displayType() {

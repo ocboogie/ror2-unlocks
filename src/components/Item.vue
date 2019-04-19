@@ -82,18 +82,3 @@ export default {
   background-size: cover;
 }
 </style>
-<style lang="scss">
-.cStack {
-  font-size: 0.8rem;
-  color: rgba(#bdbdbd, 0.8);
-}
-.cIsUtility {
-  color: #95cde5;
-}
-.cIsDamage {
-  color: #e5c962;
-}
-.cIsHealing {
-  color: #9ce562;
-}
-</style>

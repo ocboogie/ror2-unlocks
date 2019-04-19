@@ -1,15 +1,19 @@
 <template>
   <div class="tooltip">
     <div class="name">{{ name }}</div>
-    <div class="description" v-html="description" />
+    <description-renderer :description="description" />
   </div>
 </template>
 <script>
 import Popper from "popper.js";
+import DescriptionRenderer from "./DescriptionRenderer.vue";
 
 // TODO: Improve performance by lazy destroying
 
 export default {
+  components: {
+    DescriptionRenderer
+  },
   props: {
     name: {
       type: String,
