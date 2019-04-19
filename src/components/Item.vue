@@ -1,17 +1,21 @@
 <template>
-  <div
-    class="item"
-    tabindex="0"
-    @mouseover="openTooltip"
-    @mouseout="closeTooltip"
-    @click="openItem"
-    @keyup.enter="openItem"
-  >
-    <img class="icon" width="96" height="96" :src="icon" :alt="name" />
-  </div>
+  <v-popover trigger="hover">
+    <div class="item" tabindex="0" @click="openItem" @keyup.enter="openItem">
+      <img class="icon" width="96" height="96" :src="icon" :alt="name" />
+    </div>
+
+    <item-tooltip :name="name" :description="description" slot="popover" />
+  </v-popover>
 </template>
 <script>
+import { VPopover } from "v-tooltip";
+import ItemTooltip from "./ItemTooltip.vue";
+
 export default {
+  components: {
+    ItemTooltip,
+    VPopover
+  },
   props: {
     codeName: {
       type: String,
@@ -51,16 +55,6 @@ export default {
     }
   },
   methods: {
-    openTooltip() {
-      this.$emit("openTooltip", {
-        name: this.name,
-        description: this.description,
-        target: this.$el
-      });
-    },
-    closeTooltip() {
-      this.$emit("closeTooltip");
-    },
     openItem() {
       this.$emit("openItem", {
         codeName: this.codeName,

@@ -4,18 +4,14 @@
       class="item"
       v-for="item in items"
       :key="item.codeName"
-      @openTooltip="openTooltip"
-      @closeTooltip="closeTooltip"
       @openItem="openItem"
       v-bind="item"
     />
-    <item-tooltip v-if="tooltip" v-bind="tooltip" />
   </div>
 </template>
 <script>
 import items from "../assets/items.json";
 import Item from "./Item.vue";
-import ItemTooltip from "./ItemTooltip.vue";
 
 const tierNumbers = {
   Tier1: 0,
@@ -27,8 +23,7 @@ const tierNumbers = {
 
 export default {
   components: {
-    Item,
-    ItemTooltip
+    Item
   },
   computed: {
     items() {
@@ -64,27 +59,13 @@ export default {
         });
     }
   },
-  data: () => ({
-    tooltip: null
-  }),
   props: {
     search: {
       type: String,
       default: ""
     }
   },
-  watch: {
-    search() {
-      this.closeTooltip();
-    }
-  },
   methods: {
-    openTooltip(tooltip) {
-      this.tooltip = tooltip;
-    },
-    closeTooltip() {
-      this.tooltip = null;
-    },
     openItem(item) {
       this.$emit("openItem", item);
     }
