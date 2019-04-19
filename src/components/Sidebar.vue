@@ -12,11 +12,12 @@
     <div class="info" v-if="Boolean(unlock)">
       Unlock: <span class="info-body unlock-description">{{ unlock }}</span>
     </div>
-
-    <div class="description-label" v-if="Boolean(description)">
-      Description:
-    </div>
-    <description-renderer :description="description" />
+    <template v-if="Boolean(description)">
+      <div class="description-label">
+        Description:
+      </div>
+      <description-renderer :description="description" />
+    </template>
   </div>
 </template>
 <script>
