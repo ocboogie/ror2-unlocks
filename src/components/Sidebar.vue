@@ -100,7 +100,7 @@ export default {
 <style lang="scss" scoped>
 .sidebar {
   text-align: center;
-  background-color: #282939;
+  background-color: rgba(#282939, 0.8);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   height: 100%;
   padding: 1rem;
