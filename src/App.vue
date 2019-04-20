@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import debounce from "debounce";
 import Items from "./components/Items.vue";
 import Sidebar from "./components/Sidebar.vue";
 import Navbar from "./components/Navbar.vue";
@@ -35,9 +36,9 @@ export default {
     closeItem() {
       this.expanded = false;
     },
-    searched(value) {
+    searched: debounce(function(value) {
       this.searching = value;
-    }
+    }, 200)
   }
 };
 </script>
@@ -109,6 +110,7 @@ body {
   font-family: roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #242531;
 }
 *,
 *:before,
