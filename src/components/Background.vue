@@ -2,6 +2,7 @@
   <canvas ref="canvas" :width="width" :height="height" />
 </template>
 <script>
+import debounce from "debounce";
 const particles = 25;
 const backgroundColor = "#242531";
 
@@ -26,7 +27,10 @@ export default {
     height: document.documentElement.clientHeight
   }),
   mounted() {
-    window.addEventListener("resize", this.updateSize.bind(this));
+    window.addEventListener(
+      "resize",
+      debounce(this.updateSize.bind(this), 500)
+    );
 
     this.setup();
     this.start();
