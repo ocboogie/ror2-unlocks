@@ -1,5 +1,5 @@
 <template>
-  <div class="items">
+  <transition-group name="items" tag="div">
     <item
       class="item"
       v-for="item in items"
@@ -7,7 +7,7 @@
       @openItem="openItem"
       v-bind="item"
     />
-  </div>
+  </transition-group>
 </template>
 <script>
 import items from "../assets/items.json";
@@ -79,6 +79,19 @@ export default {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
+  }
+
+  .items-enter-active,
+  .items-leave-active,
+  .items-move {
+    transition: all 0.25s;
+    &.items-leave-active {
+      position: absolute;
+    }
+  }
+  .items-enter,
+  .items-leave-to {
+    opacity: 0;
   }
 }
 </style>
