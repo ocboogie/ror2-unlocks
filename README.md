@@ -1,6 +1,8 @@
 # Risk of Rain 2 Unlocks
 
 Risk of Rain 2 cheat sheet with items unlocks, stats, descriptions and more.
+![screenshot](https://github.com/ocboogie/ror2-unlocks/blob/master/screenshot.png)
+All contributions are happily welcome.
 
 ## Project setup
 
