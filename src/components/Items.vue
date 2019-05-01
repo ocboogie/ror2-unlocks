@@ -42,7 +42,7 @@ export default {
           if (a.type === "equipment" && b.type === "equipment") {
             if (a.isLunar === b.isLunar) {
               return a.index - b.index;
-            } else if (a.isLunar || b.isLunar) {
+            } else {
               return b.isLunar - a.isLunar;
             }
           } else if (a.type === "equipment") {
