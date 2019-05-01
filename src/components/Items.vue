@@ -39,19 +39,18 @@ export default {
           icon: require("../assets/icons/" + item.icon + ".jpeg")
         }))
         .sort((a, b) => {
-          let aTier = tierNumbers[a.tier];
-          let bTier = tierNumbers[b.tier];
-
           if (a.type === "equipment" && b.type === "equipment") {
-            if (!b.isLunar && a.isLunar) {
-              return -1;
+            if (a.isLunar === b.isLunar) {
+              return a.index - b.index;
+            } else if (a.isLunar || b.isLunar) {
+              return b.isLunar - a.isLunar;
             }
-
-            return a.index - b.index;
           } else if (a.type === "equipment") {
             return 1;
           }
 
+          let aTier = tierNumbers[a.tier];
+          let bTier = tierNumbers[b.tier];
           if (aTier === bTier) {
             return a.index - b.index;
           }
