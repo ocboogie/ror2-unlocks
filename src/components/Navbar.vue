@@ -14,7 +14,8 @@
 <style lang="scss" scoped>
 .navbar {
   @include notSmall {
-    width: 100% - $sidebarWidth;
+    width: 100%;
+    padding-right: $sidebarWidth;
   }
   @include small {
     width: 100%;
