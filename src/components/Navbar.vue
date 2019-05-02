@@ -14,25 +14,30 @@
 <style lang="scss" scoped>
 .navbar {
   @include notSmall {
-    padding-right: $sidebarWidth;
+    width: 100% - $sidebarWidth;
   }
+  @include small {
+    width: 100%;
+  }
+  position: fixed;
+  height: $navbarHeight;
 
-  padding: 1rem 0;
-  margin-bottom: 1.5rem;
-
-  background-color: rgb(55, 56, 72, 0.25);
+  background-color: rgb(43, 44, 57, 0.85);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .navbar-inner {
-    max-width: 350px;
+    width: 35%;
     margin: auto;
   }
 
   .search {
     width: 100%;
+    height: 3rem;
     padding: 1rem 1rem;
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 
     background-color: #242530;
     color: #bdbdbd;

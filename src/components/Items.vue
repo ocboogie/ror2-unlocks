@@ -73,6 +73,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .items {
+  padding-top: $navbarHeight + 1;
   line-height: 0;
   .item {
     display: inline-block;
