@@ -87,12 +87,16 @@ export default {
     }
   }
   .items {
+    padding-top: 6rem;
     margin: auto;
     text-align: center;
     max-width: 1250px;
     @include notSmall {
       padding-right: $sidebarWidth;
     }
+  }
+  .navbar {
+    position: fixed;
   }
 }
 </style>

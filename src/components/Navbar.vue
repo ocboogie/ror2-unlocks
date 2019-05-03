@@ -20,14 +20,10 @@
   @include small {
     width: 100%;
   }
-  position: fixed;
-  height: $navbarHeight;
 
+  padding: 1rem 0rem;
   background-color: rgb(43, 44, 57, 0.85);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   .navbar-inner {
     width: 35%;
