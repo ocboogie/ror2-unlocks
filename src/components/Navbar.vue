@@ -14,13 +14,10 @@
 <style lang="scss" scoped>
 .navbar {
   @include notSmall {
-    width: 100%;
     padding-right: $sidebarWidth;
   }
-  @include small {
-    width: 100%;
-  }
 
+  width: 100%;
   padding: 1rem 0rem;
   background-color: rgb(43, 44, 57, 0.85);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
