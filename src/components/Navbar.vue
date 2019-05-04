@@ -23,7 +23,7 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
   .navbar-inner {
-    width: 35%;
+    max-width: 350px;
     margin: auto;
   }
 
