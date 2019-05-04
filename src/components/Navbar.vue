@@ -18,7 +18,7 @@
   }
 
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 1rem 0;
   background-color: rgb(43, 44, 57, 0.85);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
