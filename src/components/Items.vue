@@ -76,8 +76,7 @@ export default {
   line-height: 0;
   .item {
     display: inline-block;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin: 7px;
   }
 
   .items-enter-active,
