@@ -1,8 +1,15 @@
 <template>
   <v-popover trigger="hover">
-    <div class="item" tabindex="0" @click="openItem" @keyup.enter="openItem">
-      <img class="icon" width="96" height="96" :src="icon" :alt="name" />
-    </div>
+    <img
+      class="item"
+      width="96"
+      height="96"
+      :src="icon"
+      :alt="name"
+      tabindex="0"
+      @click="openItem"
+      @keyup.enter="openItem"
+    />
 
     <item-tooltip :name="name" :description="description" slot="popover" />
   </v-popover>
@@ -71,8 +78,3 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.item {
-  background-size: cover;
-}
-</style>
