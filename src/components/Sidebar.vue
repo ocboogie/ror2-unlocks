@@ -4,19 +4,23 @@
       <img v-if="iconLoaded" :src="icon" alt="item icon" class="icon" />
     </div>
 
-    <div class="name" v-if="Boolean(name)">{{ name }}</div>
-    <div class="type" v-if="Boolean(tier) || type === 'equipment'">
+    <div class="name" v-if="name">{{ name }}</div>
+    <div class="type" v-if="tier || type === 'equipment'">
       {{ displayType }}
     </div>
 
-    <div class="info" v-if="Boolean(unlock)">
-      Unlock: <span class="info-body unlock-description">{{ unlock }}</span>
-    </div>
-    <template v-if="Boolean(description)">
-      <div class="description-label">
-        Description:
+    <template v-if="unlock">
+      <div class="label">
+        Unlock
       </div>
-      <description-renderer :description="description" />
+      <span class="info-body">{{ unlock }}</span>
+    </template>
+
+    <template v-if="description">
+      <div class="label">
+        Description
+      </div>
+      <description-renderer class="info-body" :description="description" />
     </template>
   </div>
 </template>
@@ -126,29 +130,19 @@ export default {
   }
 
   .type {
-    font-size: 1.7rem;
-    margin-bottom: 1.8rem;
+    font-weight: bold;
+    opacity: 0.65;
+    font-size: 1.25rem;
   }
 
-  .description-label,
-  .info {
-    font-weight: lighter;
-    font-size: 1.75rem;
+  .label {
+    font-weight: 100;
+    opacity: 0.5;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
   }
-
-  .info {
-    margin-bottom: 1rem;
-    .info-body {
-      font-weight: normal;
-    }
-  }
-
-  .unlock-description {
-    font-size: 1.5rem;
-  }
-
-  .description-label {
-    margin-bottom: 0.25rem;
+  .info-body {
+    font-size: 1.1rem;
   }
 }
 </style>
