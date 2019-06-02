@@ -7,7 +7,19 @@
       <div class="page-darken" v-if="expanded" @click="closeItem" />
     </transition>
 
-    <sidebar class="sidebar" :class="{ expanded }" v-bind="openedItem" />
+    <!-- Not using v-bind because all the excess props, not defined in the sidebar
+    props, on the item will be added as dom attributes -->
+    <sidebar
+      class="sidebar"
+      :class="{ expanded }"
+      :name="openedItem.name"
+      :tier="openedItem.tier"
+      :description="openedItem.description"
+      :type="openedItem.type"
+      :isLunar="openedItem.isLunar"
+      :unlock="openedItem.unlock"
+      :iconName="openedItem.iconName"
+    />
 
     <background id="background" />
   </div>
@@ -27,7 +39,7 @@ export default {
     Navbar,
     Background
   },
-  data: () => ({ openedItem: null, expanded: false, searching: "" }),
+  data: () => ({ openedItem: {}, expanded: false, searching: "" }),
   methods: {
     openItem(item) {
       this.openedItem = item;

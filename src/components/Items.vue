@@ -10,14 +10,16 @@
         @keyup.enter.native="openItem(item)"
         @mouseover.native="mouseOver(index)"
         @mouseleave.native="mouseLeave"
+        :name="item.name"
+        :icon="item.icon"
         ref="items"
-        v-bind="item"
       />
     </transition-group>
     <item-tooltip
       v-show="showTooltip"
       v-if="hovedItem"
-      v-bind="hovedItem"
+      :name="hovedItem.name"
+      :description="hovedItem.description"
       :target="tooltipTarget"
     />
   </div>
