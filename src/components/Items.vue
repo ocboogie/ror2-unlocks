@@ -13,14 +13,6 @@
 import items from "../assets/items.json";
 import Item from "./Item.vue";
 
-const tierNumbers = {
-  Tier1: 0,
-  Tier2: 1,
-  Tier3: 2,
-  Boss: 3,
-  Lunar: 4
-};
-
 export default {
   components: {
     Item
@@ -37,25 +29,7 @@ export default {
           ...item,
           iconName: item.icon,
           icon: require("../assets/icons/" + item.icon + ".jpeg")
-        }))
-        .sort((a, b) => {
-          if (a.type === "equipment" && b.type === "equipment") {
-            if (a.isLunar === b.isLunar) {
-              return a.index - b.index;
-            } else {
-              return b.isLunar - a.isLunar;
-            }
-          } else if (a.type === "equipment") {
-            return 1;
-          }
-
-          let aTier = tierNumbers[a.tier];
-          let bTier = tierNumbers[b.tier];
-          if (aTier === bTier) {
-            return a.index - b.index;
-          }
-          return aTier - bTier;
-        });
+        }));
     }
   },
   props: {

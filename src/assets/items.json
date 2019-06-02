@@ -1,30 +1,11 @@
 [
   {
-    "codeName": "AlienHead",
-    "tier": "Tier3",
-    "name": "Alien Head",
-    "description": "<span class=\"cIsUtility\">Reduce skill cooldowns</span> by <span class=\"cIsUtility\">25%</span> <span class=\"cStack\">(+25% per stack)</span>.",
-    "icon": "texAlienHeadIcon",
-    "index": 50,
-    "type": "item"
-  },
-  {
-    "codeName": "AttackSpeedOnCrit",
-    "tier": "Tier2",
-    "name": "Predatory Instincts",
-    "description": "<span class=\"cIsDamage\">Critical strikes</span> increase <span class=\"cIsDamage\">attack speed</span> by <span class=\"cIsDamage\">10%</span>. Maximum cap of <span class=\"cIsDamage\">30% <span class=\"cStack\">(+30% per stack)</span> attack speed</span>.",
-    "icon": "texWolfPeltIcon",
-    "index": 19,
-    "type": "item",
-    "unlock": "Reach +200% attack speed."
-  },
-  {
-    "codeName": "Bandolier",
-    "tier": "Tier2",
-    "name": "Bandolier",
-    "description": "<span class=\"cIsUtility\">18%</span> + <span class=\"cStack\">(10% on stack)</span> chance on kill to drop an ammo pack that <span class=\"cIsUtility\">resets all cooldowns</span>.",
-    "icon": "texBandolierIcon",
-    "index": 37,
+    "codeName": "Syringe",
+    "tier": "Tier1",
+    "name": "Soldier's Syringe",
+    "description": "Increases <span class=\"cIsDamage\">attack speed</span> by <span class=\"cIsDamage\">15% <span class=\"cStack\">(+15% per stack)</span></span>.",
+    "icon": "texSyringeIcon",
+    "index": 0,
     "type": "item"
   },
   {
@@ -38,51 +19,13 @@
     "unlock": "Die 5 times."
   },
   {
-    "codeName": "Behemoth",
-    "tier": "Tier3",
-    "name": "Brilliant Behemoth",
-    "description": "All your <span class=\"cIsDamage\">attacks explode</span> in a <span class=\"cIsDamage\">4m </span> <span class=\"cStack\">(+1.5m per stack)</span> radius for a bonus <span class=\"cIsDamage\">60% damage</span> to nearby enemies.",
-    "icon": "texBehemothIcon",
-    "index": 2,
-    "type": "item"
-  },
-  {
-    "codeName": "BleedOnHit",
+    "codeName": "Tooth",
     "tier": "Tier1",
-    "name": "Tri-Tip Dagger",
-    "description": "<span class=\"cIsDamage\">15%</span> <span class=\"cStack\">(+15% per stack)</span> chance to <span class=\"cIsDamage\">bleed</span> an enemy for <span class=\"cIsDamage\">240%</span> base damage.",
-    "icon": "texTriTipIcon",
-    "index": 20,
+    "name": "Monster Tooth",
+    "description": "Killing an enemy spawns a <span class=\"cIsHealing\">healing orb</span> that heals for <span class=\"cIsHealing\">4 <span class=\"cStack\">(+4 per stack)</span> health</span>.",
+    "icon": "texToothNecklaceIcon",
+    "index": 6,
     "type": "item"
-  },
-  {
-    "codeName": "BounceNearby",
-    "tier": "Tier3",
-    "name": "Sentient Meat Hook",
-    "description": "<span class=\"cIsDamage\">20%</span> <span class=\"cStack\">(+20% per stack)</span> chance on hit to <span class=\"cIsDamage\">fire homing hooks</span> at up to <span class=\"cIsDamage\">10</span> <span class=\"cStack\">(+5 per stack)</span> enemies for <span class=\"cIsDamage\">100% damage</span>.",
-    "icon": "texHookIcon",
-    "index": 38,
-    "type": "item",
-    "unlock": "Loop back to the first stage."
-  },
-  {
-    "codeName": "ChainLightning",
-    "tier": "Tier2",
-    "name": "Ukulele",
-    "description": "<span class=\"cIsDamage\">25%</span> chance to fire <span class=\"cIsDamage\">chain lighting</span> for <span class=\"cIsDamage\">80%</span> damage on up to <span class=\"cIsDamage\">3 <span class=\"cStack\">(+2 per stack)</span></span> targets within <span class=\"cIsDamage\">20m</span> <span class=\"cStack\">(+2m per stack)</span>.",
-    "icon": "texUkuleleIcon",
-    "index": 11,
-    "type": "item"
-  },
-  {
-    "codeName": "Clover",
-    "tier": "Tier3",
-    "name": "57 Leaf Clover",
-    "description": "All random effects are rolled <span class=\"cIsUtility\">+1 <span class=\"cStack\">(+1 per stack)</span> times for a favorable outcome.<span class=\"cIsUtility\">",
-    "icon": "texCloverIcon",
-    "index": 35,
-    "type": "item",
-    "unlock": "Complete 20 stages in a single run."
   },
   {
     "codeName": "CritGlasses",
@@ -91,6 +34,25 @@
     "description": "Your attacks have a <span class=\"cIsDamage\">10%</span> <span class=\"cStack\">(+10% per stack)</span> chance to '<span class=\"cIsDamage\">Critically Strike</span>', dealing <span class=\"cIsDamage\">double damage</span>.",
     "icon": "texGlassesIcon",
     "index": 7,
+    "type": "item"
+  },
+  {
+    "codeName": "Hoof",
+    "tier": "Tier1",
+    "name": "Paul's Goat Hoof",
+    "description": "Increases <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsUtility\">14%</span> <span class=\"cStack\">(+14% per stack)</span>.",
+    "icon": "texHoofIcon",
+    "index": 8,
+    "type": "item",
+    "unlock": "Fail the Shrine of Chance 3 times in a row."
+  },
+  {
+    "codeName": "Mushroom",
+    "tier": "Tier1",
+    "name": "Bustling Fungus",
+    "description": "After standing still for <span class=\"cIsHealing\">2</span> seconds, create a zone that <span class=\"cIsHealing\">heals</span> for <span class=\"cIsHealing\">4.5%</span> <span class=\"cStack\">(+2.25% per stack)</span> of your <span class=\"cIsHealing\">health</span> every second to all allies within <span class=\"cIsHealing\">3m</span> <span class=\"cStack\">(+1.5m per stack)</span>.",
+    "icon": "texMushroomIcon",
+    "index": 16,
     "type": "item"
   },
   {
@@ -104,60 +66,22 @@
     "unlock": "Discover 10 unique white items."
   },
   {
-    "codeName": "Dagger",
-    "tier": "Tier3",
-    "name": "Ceremonial Dagger",
-    "description": "Killing an enemy releases <span class=\"cIsDamage\">homing daggers</span>.",
-    "icon": "texDaggerIcon",
-    "index": 5,
+    "codeName": "BleedOnHit",
+    "tier": "Tier1",
+    "name": "Tri-Tip Dagger",
+    "description": "<span class=\"cIsDamage\">15%</span> <span class=\"cStack\">(+15% per stack)</span> chance to <span class=\"cIsDamage\">bleed</span> an enemy for <span class=\"cIsDamage\">240%</span> base damage.",
+    "icon": "texTriTipIcon",
+    "index": 20,
     "type": "item"
   },
   {
-    "codeName": "EquipmentMagazine",
-    "tier": "Tier2",
-    "name": "Fuel Cell",
-    "description": "Hold an <span class=\"cIsUtility\">additional equipment charge</span> <span class=\"cStack\">(+1 per stack)</span>. <span class=\"cIsUtility\">Reduce equipment cooldown</span> by <span class=\"cIsUtility\">15%</span> <span class=\"cStack\">(+15% per stack)</span>.",
-    "icon": "texBatteryIcon",
-    "index": 30,
-    "type": "item",
-    "unlock": "Pick up 5 different types of Equipment."
-  },
-  {
-    "codeName": "ExplodeOnDeath",
-    "tier": "Tier2",
-    "name": "Will-o'-the-wisp",
-    "description": "On killing an enemy, spawn a <span class=\"cIsDamage\">lava pillar</span> in a <span class=\"cIsDamage\">12m</span> <span class=\"cStack\">(+2.4m per stack)</span> radius for <span class=\"cIsDamage\">350%</span> <span class=\"cStack\">(+280% per stack)</span> base damage.",
-    "icon": "texWilloWispIcon",
-    "index": 4,
+    "codeName": "WardOnLevel",
+    "tier": "Tier1",
+    "name": "Warbanner",
+    "description": "On <span class=\"cIsUtility\">level up</span> drop a banner that strengthens all allies within <span class=\"cIsUtility\">16m</span> <span class=\"cStack\">(+8m per stack)</span>. Raise <span class=\"cIsDamage\">attack</span> and <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsDamage\">30%</span>.",
+    "icon": "texWarbannerIcon",
+    "index": 24,
     "type": "item"
-  },
-  {
-    "codeName": "FallBoots",
-    "tier": "Tier3",
-    "name": "H3AD-5T v2",
-    "description": "Increase <span class=\"cIsUtility\">jump height</span>. Creates a <span class=\"cIsDamage\">10m</span> radius <span class=\"cIsDamage\">kinetic explosion</span> on hitting the ground, dealing <span class=\"cIsDamage\">2300%</span> base damage that scales up with <span class=\"cIsDamage\">speed</span>. Recharges in <span class=\"cIsDamage\">10</span> <span class=\"cStack\">(-50% per stack)</span> seconds.",
-    "icon": "texGravBootsIcon",
-    "index": 22,
-    "type": "item"
-  },
-  {
-    "codeName": "Feather",
-    "tier": "Tier2",
-    "name": "Hopoo Feather",
-    "description": "Gain <span class=\"cIsUtility\">+1</span> <span class=\"cStack\">(+1 per stack)</span> maximum <span class=\"cIsUtility\">jump count.</span>",
-    "icon": "texFeatherIcon",
-    "index": 9,
-    "type": "item"
-  },
-  {
-    "codeName": "HealOnCrit",
-    "tier": "Tier2",
-    "name": "Harvester's Scythe",
-    "description": "Gain <span class=\"cIsDamage\">5% critical chance</span>. <span class=\"cIsDamage\">Critical strikes</span> <span class=\"cIsHealing\">heal</span> for <span class=\"cIsHealing\">8</span> <span class=\"cStack\">(+4 per stack)</span> <span class=\"cIsHealing\">health</span>.",
-    "icon": "texScytheIcon",
-    "index": 26,
-    "type": "item",
-    "unlock": "Complete a Prismatic Trial."
   },
   {
     "codeName": "HealWhileSafe",
@@ -169,59 +93,12 @@
     "type": "item"
   },
   {
-    "codeName": "Icicle",
-    "tier": "Tier3",
-    "name": "Frost Relic",
-    "description": "Killing an enemy surrounds you with <span class=\"cIsDamage\">3 icicles</span> that deal <span class=\"cIsDamage\">3x33% damage</span>.",
-    "icon": "texFrostRelicIcon",
-    "index": 14,
-    "type": "item"
-  },
-  {
-    "codeName": "IgniteOnKill",
+    "codeName": "PersonalShield",
     "tier": "Tier1",
-    "name": "Gasoline",
-    "description": "Killing an enemy <span class=\"cIsDamage\">ignites</span> all enemies within <span class=\"cIsDamage\">12m</span> <span class=\"cStack\">(+4m per stack)</span>. Enemies <span class=\"cIsDamage\">burn</span> for <span class=\"cIsDamage\">150%</span> <span class=\"cStack\">(+75% per stack)</span> base damage.",
-    "icon": "texGasolineIcon",
-    "index": 39,
-    "type": "item"
-  },
-  {
-    "codeName": "Infusion",
-    "tier": "Tier2",
-    "name": "Infusion",
-    "description": "Killing an enemy increases your <span class=\"cIsHealing\">health permanently</span> by <span class=\"cIsHealing\">1</span>, up to a <span class=\"cIsHealing\">maximum</span> of <span class=\"cIsHealing\">100 <span class=\"cStack\">(+100 per stack)</span> health</span>.",
-    "icon": "texInfusionIcon",
-    "index": 33,
-    "type": "item",
-    "unlock": "Defeat 3000 enemies."
-  },
-  {
-    "codeName": "Hoof",
-    "tier": "Tier1",
-    "name": "Paul's Goat Hoof",
-    "description": "Increases <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsUtility\">14%</span> <span class=\"cStack\">(+14% per stack)</span>.",
-    "icon": "texHoofIcon",
-    "index": 8,
-    "type": "item",
-    "unlock": "Fail the Shrine of Chance 3 times in a row."
-  },
-  {
-    "codeName": "Knurl",
-    "tier": "Boss",
-    "name": "Titanic Knurl",
-    "description": "<span class=\"cIsHealing\">Increase maximum health</span> by <span class=\"cIsHealing\">40</span> <span class=\"cStack\">(+40 per stack)</span> and <span class=\"cIsHealing\">health regeneration</span> by <span class=\"cIsHealing\">1.6 <span class=\"cStack\">(+1.6 per stack)</span> health / second</span>.",
-    "icon": "texKnurlIcon",
-    "index": 52,
-    "type": "item"
-  },
-  {
-    "codeName": "GhostOnKill",
-    "tier": "Tier3",
-    "name": "Happiest Mask",
-    "description": "Killing enemies has a <span class=\"cIsDamage\">10%</span> chance to <span class=\"cIsDamage\">spawn a ghost</span> of the killed enemy with <span class=\"cIsDamage\">500%</span> damage. Lasts <span class=\"cIsDamage\">30s</span> <span class=\"cStack\">(+30s per stack).</span>",
-    "icon": "texMaskIcon",
-    "index": 15,
+    "name": "Personal Shield Generator",
+    "description": "Gain a <span class=\"cIsHealing\">25</span> <span class=\"cStack\">(+25 per stack)</span> <span class=\"cIsHealing\">health shield</span>. Recharges outside of danger.",
+    "icon": "texPersonalShieldIcon",
+    "index": 29,
     "type": "item"
   },
   {
@@ -235,143 +112,12 @@
     "unlock": "Defeat an Elite-type monster."
   },
   {
-    "codeName": "Missile",
-    "tier": "Tier2",
-    "name": "AtG Missile Mk. 1",
-    "description": "<span class=\"cIsDamage\">10%</span> chance to fire a missile that deals <span class=\"cIsDamage\">300%</span> <span class=\"cStack\">(+300% per stack)</span> damage.",
-    "icon": "texMissileLauncherIcon",
-    "index": 3,
-    "type": "item"
-  },
-  {
-    "codeName": "Mushroom",
+    "codeName": "IgniteOnKill",
     "tier": "Tier1",
-    "name": "Bustling Fungus",
-    "description": "After standing still for <span class=\"cIsHealing\">2</span> seconds, create a zone that <span class=\"cIsHealing\">heals</span> for <span class=\"cIsHealing\">4.5%</span> <span class=\"cStack\">(+2.25% per stack)</span> of your <span class=\"cIsHealing\">health</span> every second to all allies within <span class=\"cIsHealing\">3m</span> <span class=\"cStack\">(+1.5m per stack)</span>.",
-    "icon": "texMushroomIcon",
-    "index": 16,
-    "type": "item"
-  },
-  {
-    "codeName": "NovaOnHeal",
-    "tier": "Tier3",
-    "name": "N'kuhana's Opinion",
-    "description": "Store <span class=\"cIsHealing\">100%</span> <span class=\"cStack\">(+100% per stack)</span> of healing as <span class=\"cIsHealing\">Soul Energy</span>. After your <span class=\"cIsHealing\">Soul Energy</span> reaches <span class=\"cIsHealing\">10%</span> of your <span class=\"cIsHealing\">maximum health</span>, <span class=\"cIsDamage\">fire a skull</span> that deals <span class=\"cIsDamage\">250%</span> of your <span class=\"cIsHealing\">Soul Energy</span> as <span class=\"cIsDamage\">damage</span>.",
-    "icon": "texDevilHornsIcon",
-    "index": 31,
-    "type": "item",
-    "unlock": "Find the Altar to N'kuhana."
-  },
-  {
-    "codeName": "PersonalShield",
-    "tier": "Tier1",
-    "name": "Personal Shield Generator",
-    "description": "Gain a <span class=\"cIsHealing\">25</span> <span class=\"cStack\">(+25 per stack)</span> <span class=\"cIsHealing\">health shield</span>. Recharges outside of danger.",
-    "icon": "texPersonalShieldIcon",
-    "index": 29,
-    "type": "item"
-  },
-  {
-    "codeName": "Phasing",
-    "tier": "Tier2",
-    "name": "Old War Stealthkit",
-    "description": "Chance on taking damage to gain <span class=\"cIsUtility\">40% movement speed</span> and <span class=\"cIsUtility\">invisibility</span> for <span class=\"cIsUtility\">3s</span> <span class=\"cStack\">(+1.5s per stack)</span>. Chance increases the more damage you take.",
-    "icon": "texStealthkitIcon",
-    "index": 25,
-    "type": "item"
-  },
-  {
-    "codeName": "ShieldOnly",
-    "tier": "Lunar",
-    "name": "Transcendence",
-    "description": "<span class=\"cIsHealing\">Convert</span> all but <span class=\"cIsHealing\">1 health</span> into <span class=\"cIsHealing\">regenerating shields</span>. <span class=\"cIsHealing\">Gain 50% <span class=\"cStack\">(+25% per stack)</span> maximum health</span>.",
-    "icon": "texShieldBugIcon",
-    "index": 49,
-    "type": "item"
-  },
-  {
-    "codeName": "Seed",
-    "tier": "Tier2",
-    "name": "Leeching Seed",
-    "description": "Dealing damage <span class=\"cIsHealing\">heals</span> you for <span class=\"cIsHealing\">1 <span class=\"cStack\">(+1 per stack)</span> health</span>.",
-    "icon": "texSeedIcon",
-    "index": 13,
-    "type": "item"
-  },
-  {
-    "codeName": "ShockNearby",
-    "tier": "Tier3",
-    "name": "Unstable Tesla Coil",
-    "description": "Fire out <span class=\"cIsDamage\">lightning</span> that hits <span class=\"cIsDamage\">3</span> <span class=\"cStack\">(+3 per stack)</span> enemies for <span class=\"cIsDamage\">200%</span> base damage every <span class=\"cIsDamage\">0.5s</span>. The Tesla Coil switches off every <span class=\"cIsDamage\">10 seconds</span>.",
-    "icon": "texTeslaCoilIcon",
-    "index": 32,
-    "type": "item",
-    "unlock": "Deal 5000 damage in one shot."
-  },
-  {
-    "codeName": "SprintOutOfCombat",
-    "tier": "Tier2",
-    "name": "Red Whip",
-    "description": "Leaving combat boosts your <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsUtility\">30%</span> <span class=\"cStack\">(+30% per stack)</span>.",
-    "icon": "texWhipIcon",
-    "index": 21,
-    "type": "item"
-  },
-  {
-    "codeName": "Syringe",
-    "tier": "Tier1",
-    "name": "Soldier's Syringe",
-    "description": "Increases <span class=\"cIsDamage\">attack speed</span> by <span class=\"cIsDamage\">15% <span class=\"cStack\">(+15% per stack)</span></span>.",
-    "icon": "texSyringeIcon",
-    "index": 0,
-    "type": "item"
-  },
-  {
-    "codeName": "Talisman",
-    "tier": "Tier3",
-    "name": "Soulbound Catalyst",
-    "description": "<span class=\"cIsDamage\">Kills reduce</span> <span class=\"cIsUtility\">equipment cooldown</span> by <span class=\"cIsUtility\">4s</span> <span class=\"cStack\">(+2s per stack)</span>.",
-    "icon": "texTalismanIcon",
-    "index": 51,
-    "type": "item",
-    "unlock": "Discover and activate 8 unique Newt Altars."
-  },
-  {
-    "codeName": "JumpBoost",
-    "tier": "Tier2",
-    "name": "Wax Quail",
-    "description": "<span class=\"cIsUtility\">Jumping</span> while <span class=\"cIsUtility\">sprinting</span> boosts you forward by <span class=\"cIsUtility\">10m</span><span class=\"cStack\">(+10m per stack)</span>.",
-    "icon": "texWaxBirdIcon",
-    "index": 76,
-    "type": "item",
-    "unlock": "Reach +300% movespeed (includes sprinting)."
-  },
-  {
-    "codeName": "Tooth",
-    "tier": "Tier1",
-    "name": "Monster Tooth",
-    "description": "Killing an enemy spawns a <span class=\"cIsHealing\">healing orb</span> that heals for <span class=\"cIsHealing\">4 <span class=\"cStack\">(+4 per stack)</span> health</span>.",
-    "icon": "texToothNecklaceIcon",
-    "index": 6,
-    "type": "item"
-  },
-  {
-    "codeName": "WarCryOnMultiKill",
-    "tier": "Tier2",
-    "name": "Berzerker's Pauldron",
-    "description": "<span class=\"cIsDamage\">Killing 3 enemies</span> within <span class=\"cIsDamage\">1</span> second sends you into a <span class=\"cIsDamage\">frenzy</span> for <span class=\"cIsDamage\">6s</span> <span class=\"cStack\">(+4s per stack)</span>. Increases <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsUtility\">50%</span> and <span class=\"cIsDamage\">attack speed</span> by <span class=\"cIsDamage\">100%</span>.",
-    "icon": "texPauldronIcon",
-    "index": 46,
-    "type": "item",
-    "unlock": "Charge the Teleporter with less than 10% health."
-  },
-  {
-    "codeName": "WardOnLevel",
-    "tier": "Tier1",
-    "name": "Warbanner",
-    "description": "On <span class=\"cIsUtility\">level up</span> drop a banner that strengthens all allies within <span class=\"cIsUtility\">16m</span> <span class=\"cStack\">(+8m per stack)</span>. Raise <span class=\"cIsDamage\">attack</span> and <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsDamage\">30%</span>.",
-    "icon": "texWarbannerIcon",
-    "index": 24,
+    "name": "Gasoline",
+    "description": "Killing an enemy <span class=\"cIsDamage\">ignites</span> all enemies within <span class=\"cIsDamage\">12m</span> <span class=\"cStack\">(+4m per stack)</span>. Enemies <span class=\"cIsDamage\">burn</span> for <span class=\"cIsDamage\">150%</span> <span class=\"cStack\">(+75% per stack)</span> base damage.",
+    "icon": "texGasolineIcon",
+    "index": 39,
     "type": "item"
   },
   {
@@ -392,33 +138,6 @@
     "index": 42,
     "type": "item",
     "unlock": "Duplicate the same item 7 times in a row with a 3D Printer."
-  },
-  {
-    "codeName": "LunarDagger",
-    "tier": "Lunar",
-    "name": "Shaped Glass",
-    "description": "Increase base damage by <span class=\"cIsDamage\">100%</span> <span class=\"cStack\">(+100% per stack)</span>. <span class=\"cIsHealing\">Reduce maximum health by 50%</span> <span class=\"cStack\">(+50% per stack)</span>.",
-    "icon": "texLunarDaggerIcon",
-    "index": 43,
-    "type": "item"
-  },
-  {
-    "codeName": "GoldOnHit",
-    "tier": "Lunar",
-    "name": "Brittle Crown",
-    "description": "<span class=\"cIsUtility\">30% chance on hit</span> to gain <span class=\"cIsUtility\">3</span> <span class=\"cStack\">(+3 per stack)</span> gold. <span class=\"cIsUtility\">Lose gold</span> equal to the amount you are <span class=\"cIsUtility\">hit</span> for OR <span class=\"cIsUtility\">lose % gold</span> equal to the <span class=\"cIsHealing\">% maximum health</span> you lost. Chooses the greater of the two.",
-    "icon": "texBoneCrownIcon",
-    "index": 44,
-    "type": "item"
-  },
-  {
-    "codeName": "BeetleGland",
-    "tier": "Boss",
-    "name": "Queen's Gland",
-    "description": "Every 30 seconds, <span class=\"cIsUtility\">summon a Beetle Guard</span> with bonus <span class=\"cIsDamage\">300%</span> damage and <span class=\"cIsHealing\">100% health</span>. Can have up to <span class=\"cIsUtility\">1</span> <span class=\"cStack\">(+1 per stack)</span> Guards at a time.",
-    "icon": "texBeetleGlandIcon",
-    "index": 53,
-    "type": "item"
   },
   {
     "codeName": "SprintBonus",
@@ -469,6 +188,128 @@
     "unlock": "Complete a Teleporter event."
   },
   {
+    "codeName": "Missile",
+    "tier": "Tier2",
+    "name": "AtG Missile Mk. 1",
+    "description": "<span class=\"cIsDamage\">10%</span> chance to fire a missile that deals <span class=\"cIsDamage\">300%</span> <span class=\"cStack\">(+300% per stack)</span> damage.",
+    "icon": "texMissileLauncherIcon",
+    "index": 3,
+    "type": "item"
+  },
+  {
+    "codeName": "ExplodeOnDeath",
+    "tier": "Tier2",
+    "name": "Will-o'-the-wisp",
+    "description": "On killing an enemy, spawn a <span class=\"cIsDamage\">lava pillar</span> in a <span class=\"cIsDamage\">12m</span> <span class=\"cStack\">(+2.4m per stack)</span> radius for <span class=\"cIsDamage\">350%</span> <span class=\"cStack\">(+280% per stack)</span> base damage.",
+    "icon": "texWilloWispIcon",
+    "index": 4,
+    "type": "item"
+  },
+  {
+    "codeName": "Feather",
+    "tier": "Tier2",
+    "name": "Hopoo Feather",
+    "description": "Gain <span class=\"cIsUtility\">+1</span> <span class=\"cStack\">(+1 per stack)</span> maximum <span class=\"cIsUtility\">jump count.</span>",
+    "icon": "texFeatherIcon",
+    "index": 9,
+    "type": "item"
+  },
+  {
+    "codeName": "ChainLightning",
+    "tier": "Tier2",
+    "name": "Ukulele",
+    "description": "<span class=\"cIsDamage\">25%</span> chance to fire <span class=\"cIsDamage\">chain lighting</span> for <span class=\"cIsDamage\">80%</span> damage on up to <span class=\"cIsDamage\">3 <span class=\"cStack\">(+2 per stack)</span></span> targets within <span class=\"cIsDamage\">20m</span> <span class=\"cStack\">(+2m per stack)</span>.",
+    "icon": "texUkuleleIcon",
+    "index": 11,
+    "type": "item"
+  },
+  {
+    "codeName": "Seed",
+    "tier": "Tier2",
+    "name": "Leeching Seed",
+    "description": "Dealing damage <span class=\"cIsHealing\">heals</span> you for <span class=\"cIsHealing\">1 <span class=\"cStack\">(+1 per stack)</span> health</span>.",
+    "icon": "texSeedIcon",
+    "index": 13,
+    "type": "item"
+  },
+  {
+    "codeName": "AttackSpeedOnCrit",
+    "tier": "Tier2",
+    "name": "Predatory Instincts",
+    "description": "<span class=\"cIsDamage\">Critical strikes</span> increase <span class=\"cIsDamage\">attack speed</span> by <span class=\"cIsDamage\">10%</span>. Maximum cap of <span class=\"cIsDamage\">30% <span class=\"cStack\">(+30% per stack)</span> attack speed</span>.",
+    "icon": "texWolfPeltIcon",
+    "index": 19,
+    "type": "item",
+    "unlock": "Reach +200% attack speed."
+  },
+  {
+    "codeName": "SprintOutOfCombat",
+    "tier": "Tier2",
+    "name": "Red Whip",
+    "description": "Leaving combat boosts your <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsUtility\">30%</span> <span class=\"cStack\">(+30% per stack)</span>.",
+    "icon": "texWhipIcon",
+    "index": 21,
+    "type": "item"
+  },
+  {
+    "codeName": "Phasing",
+    "tier": "Tier2",
+    "name": "Old War Stealthkit",
+    "description": "Chance on taking damage to gain <span class=\"cIsUtility\">40% movement speed</span> and <span class=\"cIsUtility\">invisibility</span> for <span class=\"cIsUtility\">3s</span> <span class=\"cStack\">(+1.5s per stack)</span>. Chance increases the more damage you take.",
+    "icon": "texStealthkitIcon",
+    "index": 25,
+    "type": "item"
+  },
+  {
+    "codeName": "HealOnCrit",
+    "tier": "Tier2",
+    "name": "Harvester's Scythe",
+    "description": "Gain <span class=\"cIsDamage\">5% critical chance</span>. <span class=\"cIsDamage\">Critical strikes</span> <span class=\"cIsHealing\">heal</span> for <span class=\"cIsHealing\">8</span> <span class=\"cStack\">(+4 per stack)</span> <span class=\"cIsHealing\">health</span>.",
+    "icon": "texScytheIcon",
+    "index": 26,
+    "type": "item",
+    "unlock": "Complete a Prismatic Trial."
+  },
+  {
+    "codeName": "EquipmentMagazine",
+    "tier": "Tier2",
+    "name": "Fuel Cell",
+    "description": "Hold an <span class=\"cIsUtility\">additional equipment charge</span> <span class=\"cStack\">(+1 per stack)</span>. <span class=\"cIsUtility\">Reduce equipment cooldown</span> by <span class=\"cIsUtility\">15%</span> <span class=\"cStack\">(+15% per stack)</span>.",
+    "icon": "texBatteryIcon",
+    "index": 30,
+    "type": "item",
+    "unlock": "Pick up 5 different types of Equipment."
+  },
+  {
+    "codeName": "Infusion",
+    "tier": "Tier2",
+    "name": "Infusion",
+    "description": "Killing an enemy increases your <span class=\"cIsHealing\">health permanently</span> by <span class=\"cIsHealing\">1</span>, up to a <span class=\"cIsHealing\">maximum</span> of <span class=\"cIsHealing\">100 <span class=\"cStack\">(+100 per stack)</span> health</span>.",
+    "icon": "texInfusionIcon",
+    "index": 33,
+    "type": "item",
+    "unlock": "Defeat 3000 enemies."
+  },
+  {
+    "codeName": "Bandolier",
+    "tier": "Tier2",
+    "name": "Bandolier",
+    "description": "<span class=\"cIsUtility\">18%</span> + <span class=\"cStack\">(10% on stack)</span> chance on kill to drop an ammo pack that <span class=\"cIsUtility\">resets all cooldowns</span>.",
+    "icon": "texBandolierIcon",
+    "index": 37,
+    "type": "item"
+  },
+  {
+    "codeName": "WarCryOnMultiKill",
+    "tier": "Tier2",
+    "name": "Berzerker's Pauldron",
+    "description": "<span class=\"cIsDamage\">Killing 3 enemies</span> within <span class=\"cIsDamage\">1</span> second sends you into a <span class=\"cIsDamage\">frenzy</span> for <span class=\"cIsDamage\">6s</span> <span class=\"cStack\">(+4s per stack)</span>. Increases <span class=\"cIsUtility\">movement speed</span> by <span class=\"cIsUtility\">50%</span> and <span class=\"cIsDamage\">attack speed</span> by <span class=\"cIsDamage\">100%</span>.",
+    "icon": "texPauldronIcon",
+    "index": 46,
+    "type": "item",
+    "unlock": "Charge the Teleporter with less than 10% health."
+  },
+  {
     "codeName": "SprintArmor",
     "tier": "Tier2",
     "name": "Rose Buckler",
@@ -505,6 +346,120 @@
     "icon": "texBaubleIcon",
     "index": 65,
     "type": "item"
+  },
+  {
+    "codeName": "JumpBoost",
+    "tier": "Tier2",
+    "name": "Wax Quail",
+    "description": "<span class=\"cIsUtility\">Jumping</span> while <span class=\"cIsUtility\">sprinting</span> boosts you forward by <span class=\"cIsUtility\">10m</span><span class=\"cStack\">(+10m per stack)</span>.",
+    "icon": "texWaxBirdIcon",
+    "index": 76,
+    "type": "item",
+    "unlock": "Reach +300% movespeed (includes sprinting)."
+  },
+  {
+    "codeName": "Behemoth",
+    "tier": "Tier3",
+    "name": "Brilliant Behemoth",
+    "description": "All your <span class=\"cIsDamage\">attacks explode</span> in a <span class=\"cIsDamage\">4m </span> <span class=\"cStack\">(+1.5m per stack)</span> radius for a bonus <span class=\"cIsDamage\">60% damage</span> to nearby enemies.",
+    "icon": "texBehemothIcon",
+    "index": 2,
+    "type": "item"
+  },
+  {
+    "codeName": "Dagger",
+    "tier": "Tier3",
+    "name": "Ceremonial Dagger",
+    "description": "Killing an enemy releases <span class=\"cIsDamage\">homing daggers</span>.",
+    "icon": "texDaggerIcon",
+    "index": 5,
+    "type": "item"
+  },
+  {
+    "codeName": "Icicle",
+    "tier": "Tier3",
+    "name": "Frost Relic",
+    "description": "Killing an enemy surrounds you with <span class=\"cIsDamage\">3 icicles</span> that deal <span class=\"cIsDamage\">3x33% damage</span>.",
+    "icon": "texFrostRelicIcon",
+    "index": 14,
+    "type": "item"
+  },
+  {
+    "codeName": "GhostOnKill",
+    "tier": "Tier3",
+    "name": "Happiest Mask",
+    "description": "Killing enemies has a <span class=\"cIsDamage\">10%</span> chance to <span class=\"cIsDamage\">spawn a ghost</span> of the killed enemy with <span class=\"cIsDamage\">500%</span> damage. Lasts <span class=\"cIsDamage\">30s</span> <span class=\"cStack\">(+30s per stack).</span>",
+    "icon": "texMaskIcon",
+    "index": 15,
+    "type": "item"
+  },
+  {
+    "codeName": "FallBoots",
+    "tier": "Tier3",
+    "name": "H3AD-5T v2",
+    "description": "Increase <span class=\"cIsUtility\">jump height</span>. Creates a <span class=\"cIsDamage\">10m</span> radius <span class=\"cIsDamage\">kinetic explosion</span> on hitting the ground, dealing <span class=\"cIsDamage\">2300%</span> base damage that scales up with <span class=\"cIsDamage\">speed</span>. Recharges in <span class=\"cIsDamage\">10</span> <span class=\"cStack\">(-50% per stack)</span> seconds.",
+    "icon": "texGravBootsIcon",
+    "index": 22,
+    "type": "item"
+  },
+  {
+    "codeName": "NovaOnHeal",
+    "tier": "Tier3",
+    "name": "N'kuhana's Opinion",
+    "description": "Store <span class=\"cIsHealing\">100%</span> <span class=\"cStack\">(+100% per stack)</span> of healing as <span class=\"cIsHealing\">Soul Energy</span>. After your <span class=\"cIsHealing\">Soul Energy</span> reaches <span class=\"cIsHealing\">10%</span> of your <span class=\"cIsHealing\">maximum health</span>, <span class=\"cIsDamage\">fire a skull</span> that deals <span class=\"cIsDamage\">250%</span> of your <span class=\"cIsHealing\">Soul Energy</span> as <span class=\"cIsDamage\">damage</span>.",
+    "icon": "texDevilHornsIcon",
+    "index": 31,
+    "type": "item",
+    "unlock": "Find the Altar to N'kuhana."
+  },
+  {
+    "codeName": "ShockNearby",
+    "tier": "Tier3",
+    "name": "Unstable Tesla Coil",
+    "description": "Fire out <span class=\"cIsDamage\">lightning</span> that hits <span class=\"cIsDamage\">3</span> <span class=\"cStack\">(+3 per stack)</span> enemies for <span class=\"cIsDamage\">200%</span> base damage every <span class=\"cIsDamage\">0.5s</span>. The Tesla Coil switches off every <span class=\"cIsDamage\">10 seconds</span>.",
+    "icon": "texTeslaCoilIcon",
+    "index": 32,
+    "type": "item",
+    "unlock": "Deal 5000 damage in one shot."
+  },
+  {
+    "codeName": "Clover",
+    "tier": "Tier3",
+    "name": "57 Leaf Clover",
+    "description": "All random effects are rolled <span class=\"cIsUtility\">+1 <span class=\"cStack\">(+1 per stack)</span> times for a favorable outcome.<span class=\"cIsUtility\">",
+    "icon": "texCloverIcon",
+    "index": 35,
+    "type": "item",
+    "unlock": "Complete 20 stages in a single run."
+  },
+  {
+    "codeName": "BounceNearby",
+    "tier": "Tier3",
+    "name": "Sentient Meat Hook",
+    "description": "<span class=\"cIsDamage\">20%</span> <span class=\"cStack\">(+20% per stack)</span> chance on hit to <span class=\"cIsDamage\">fire homing hooks</span> at up to <span class=\"cIsDamage\">10</span> <span class=\"cStack\">(+5 per stack)</span> enemies for <span class=\"cIsDamage\">100% damage</span>.",
+    "icon": "texHookIcon",
+    "index": 38,
+    "type": "item",
+    "unlock": "Loop back to the first stage."
+  },
+  {
+    "codeName": "AlienHead",
+    "tier": "Tier3",
+    "name": "Alien Head",
+    "description": "<span class=\"cIsUtility\">Reduce skill cooldowns</span> by <span class=\"cIsUtility\">25%</span> <span class=\"cStack\">(+25% per stack)</span>.",
+    "icon": "texAlienHeadIcon",
+    "index": 50,
+    "type": "item"
+  },
+  {
+    "codeName": "Talisman",
+    "tier": "Tier3",
+    "name": "Soulbound Catalyst",
+    "description": "<span class=\"cIsDamage\">Kills reduce</span> <span class=\"cIsUtility\">equipment cooldown</span> by <span class=\"cIsUtility\">4s</span> <span class=\"cStack\">(+2s per stack)</span>.",
+    "icon": "texTalismanIcon",
+    "index": 51,
+    "type": "item",
+    "unlock": "Discover and activate 8 unique Newt Altars."
   },
   {
     "codeName": "ExtraLife",
@@ -545,15 +500,6 @@
     "unlock": "Defeat an Elite boss on Monsoon difficulty."
   },
   {
-    "codeName": "RepeatHeal",
-    "tier": "Lunar",
-    "name": "Corpsebloom",
-    "description": "<span class=\"cIsHealing\">Heal +100%</span> <span class=\"cStack\">(+100% per stack)</span> more. <span class=\"cIsHealing\">All healing is applied over time</span>. Can <span class=\"cIsHealing\">heal</span> for a <span class=\"cIsHealing\">maximum</span> of <span class=\"cIsHealing\">10%</span> (reduced by 50% per stack) of your <span class=\"cIsHealing\">health per second</span>.",
-    "icon": "texCorpseflowerIcon",
-    "index": 71,
-    "type": "item"
-  },
-  {
     "codeName": "IncreaseHealing",
     "tier": "Tier3",
     "name": "Rejuvenation Rack",
@@ -562,6 +508,60 @@
     "index": 75,
     "type": "item",
     "unlock": "Without healing, reach and complete the 3rd Teleporter event."
+  },
+  {
+    "codeName": "Knurl",
+    "tier": "Boss",
+    "name": "Titanic Knurl",
+    "description": "<span class=\"cIsHealing\">Increase maximum health</span> by <span class=\"cIsHealing\">40</span> <span class=\"cStack\">(+40 per stack)</span> and <span class=\"cIsHealing\">health regeneration</span> by <span class=\"cIsHealing\">1.6 <span class=\"cStack\">(+1.6 per stack)</span> health / second</span>.",
+    "icon": "texKnurlIcon",
+    "index": 52,
+    "type": "item"
+  },
+  {
+    "codeName": "BeetleGland",
+    "tier": "Boss",
+    "name": "Queen's Gland",
+    "description": "Every 30 seconds, <span class=\"cIsUtility\">summon a Beetle Guard</span> with bonus <span class=\"cIsDamage\">300%</span> damage and <span class=\"cIsHealing\">100% health</span>. Can have up to <span class=\"cIsUtility\">1</span> <span class=\"cStack\">(+1 per stack)</span> Guards at a time.",
+    "icon": "texBeetleGlandIcon",
+    "index": 53,
+    "type": "item"
+  },
+  {
+    "codeName": "LunarDagger",
+    "tier": "Lunar",
+    "name": "Shaped Glass",
+    "description": "Increase base damage by <span class=\"cIsDamage\">100%</span> <span class=\"cStack\">(+100% per stack)</span>. <span class=\"cIsHealing\">Reduce maximum health by 50%</span> <span class=\"cStack\">(+50% per stack)</span>.",
+    "icon": "texLunarDaggerIcon",
+    "index": 43,
+    "type": "item"
+  },
+  {
+    "codeName": "GoldOnHit",
+    "tier": "Lunar",
+    "name": "Brittle Crown",
+    "description": "<span class=\"cIsUtility\">30% chance on hit</span> to gain <span class=\"cIsUtility\">3</span> <span class=\"cStack\">(+3 per stack)</span> gold. <span class=\"cIsUtility\">Lose gold</span> equal to the amount you are <span class=\"cIsUtility\">hit</span> for OR <span class=\"cIsUtility\">lose % gold</span> equal to the <span class=\"cIsHealing\">% maximum health</span> you lost. Chooses the greater of the two.",
+    "icon": "texBoneCrownIcon",
+    "index": 44,
+    "type": "item"
+  },
+  {
+    "codeName": "ShieldOnly",
+    "tier": "Lunar",
+    "name": "Transcendence",
+    "description": "<span class=\"cIsHealing\">Convert</span> all but <span class=\"cIsHealing\">1 health</span> into <span class=\"cIsHealing\">regenerating shields</span>. <span class=\"cIsHealing\">Gain 50% <span class=\"cStack\">(+25% per stack)</span> maximum health</span>.",
+    "icon": "texShieldBugIcon",
+    "index": 49,
+    "type": "item"
+  },
+  {
+    "codeName": "RepeatHeal",
+    "tier": "Lunar",
+    "name": "Corpsebloom",
+    "description": "<span class=\"cIsHealing\">Heal +100%</span> <span class=\"cStack\">(+100% per stack)</span> more. <span class=\"cIsHealing\">All healing is applied over time</span>. Can <span class=\"cIsHealing\">heal</span> for a <span class=\"cIsHealing\">maximum</span> of <span class=\"cIsHealing\">10%</span> (reduced by 50% per stack) of your <span class=\"cIsHealing\">health per second</span>.",
+    "icon": "texCorpseflowerIcon",
+    "index": 71,
+    "type": "item"
   },
   {
     "codeName": "AutoCastEquipment",
@@ -574,15 +574,41 @@
     "unlock": "Kill 20 Hermit Crabs by chasing them off the edge of the map."
   },
   {
-    "codeName": "Blackhole",
-    "cooldown": 60,
+    "codeName": "Meteor",
+    "cooldown": 140,
+    "canDrop": true,
+    "enigmaCompatible": false,
+    "isLunar": true,
+    "name": "Glowing Meteorite",
+    "description": "<span class=\"cIsDamage\">Rain meteors</span> from the sky, damaging ALL characters for <span class=\"cIsDamage\">600% damage per blast</span>. Lasts 20 seconds.",
+    "icon": "texMeteorIcon",
+    "index": 3,
+    "type": "equipment",
+    "unlock": "Carry 5 Lunar items in a single run."
+  },
+  {
+    "codeName": "BurnNearby",
+    "cooldown": 45,
     "canDrop": true,
     "enigmaCompatible": true,
-    "isLunar": false,
-    "name": "Primordial Cube",
-    "description": "Fire a black hole that <span class=\"cIsUtility\">draws enemies within 30m into its center</span>. Lasts 10 seconds",
-    "icon": "texGravCubeIcon",
-    "index": 11,
+    "isLunar": true,
+    "name": "Helfire Tincture",
+    "description": "Ignite ALL characters within 8m. Deal <span class=\"cIsDamage\">5% of your maximum health/second as burning</span> to yourself. The burn is <span class=\"cIsDamage\">0.5x</span> stronger on allies, and <span class=\"cIsDamage\">24x</span> stronger on enemies.",
+    "icon": "texPotionIcon",
+    "index": 23,
+    "type": "equipment",
+    "unlock": "Kill 15 enemies simultaneously."
+  },
+  {
+    "codeName": "CrippleWard",
+    "cooldown": 15,
+    "canDrop": true,
+    "enigmaCompatible": true,
+    "isLunar": true,
+    "name": "Effigy of Grief",
+    "description": "ALL characters within are <span class=\"cIsUtility\">slowed by 50%</span> and have their <span class=\"cIsDamage\">armor reduced by 20.</span>",
+    "icon": "texEffigyIcon",
+    "index": 26,
     "type": "equipment"
   },
   {
@@ -610,17 +636,16 @@
     "type": "equipment"
   },
   {
-    "codeName": "Meteor",
-    "cooldown": 140,
+    "codeName": "Blackhole",
+    "cooldown": 60,
     "canDrop": true,
-    "enigmaCompatible": false,
-    "isLunar": true,
-    "name": "Glowing Meteorite",
-    "description": "<span class=\"cIsDamage\">Rain meteors</span> from the sky, damaging ALL characters for <span class=\"cIsDamage\">600% damage per blast</span>. Lasts 20 seconds.",
-    "icon": "texMeteorIcon",
-    "index": 3,
-    "type": "equipment",
-    "unlock": "Carry 5 Lunar items in a single run."
+    "enigmaCompatible": true,
+    "isLunar": false,
+    "name": "Primordial Cube",
+    "description": "Fire a black hole that <span class=\"cIsUtility\">draws enemies within 30m into its center</span>. Lasts 10 seconds",
+    "icon": "texGravCubeIcon",
+    "index": 11,
+    "type": "equipment"
   },
   {
     "codeName": "CritOnUse",
@@ -712,19 +737,6 @@
     "unlock": "Fully upgrade a Shrine of the Woods."
   },
   {
-    "codeName": "BurnNearby",
-    "cooldown": 45,
-    "canDrop": true,
-    "enigmaCompatible": true,
-    "isLunar": true,
-    "name": "Helfire Tincture",
-    "description": "Ignite ALL characters within 8m. Deal <span class=\"cIsDamage\">5% of your maximum health/second as burning</span> to yourself. The burn is <span class=\"cIsDamage\">0.5x</span> stronger on allies, and <span class=\"cIsDamage\">24x</span> stronger on enemies.",
-    "icon": "texPotionIcon",
-    "index": 23,
-    "type": "equipment",
-    "unlock": "Kill 15 enemies simultaneously."
-  },
-  {
     "codeName": "Scanner",
     "cooldown": 45,
     "canDrop": true,
@@ -736,17 +748,5 @@
     "index": 25,
     "type": "equipment",
     "unlock": "Collect 10 Monster or Environment Logs."
-  },
-  {
-    "codeName": "CrippleWard",
-    "cooldown": 15,
-    "canDrop": true,
-    "enigmaCompatible": true,
-    "isLunar": true,
-    "name": "Effigy of Grief",
-    "description": "ALL characters within are <span class=\"cIsUtility\">slowed by 50%</span> and have their <span class=\"cIsDamage\">armor reduced by 20.</span>",
-    "icon": "texEffigyIcon",
-    "index": 26,
-    "type": "equipment"
   }
 ]
