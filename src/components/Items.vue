@@ -1,22 +1,36 @@
 <template>
-  <transition-group name="items" tag="div">
-    <item
-      class="item"
-      v-for="item in items"
-      :key="item.codeName"
-      @openItem="openItem"
-      v-bind="item"
+  <div>
+    <transition-group name="items" tag="div">
+      <item
+        class="item"
+        v-for="(item, index) in items"
+        :key="item.codeName"
+        @openItem="openItem"
+        @mouseover.native="mouseOver(index)"
+        @mouseleave.native="mouseLeave"
+        ref="items"
+        v-bind="item"
+      />
+    </transition-group>
+    <item-tooltip
+      v-show="showTooltip"
+      v-if="hovedItem"
+      v-bind="hovedItem"
+      :target="tooltipTarget"
     />
-  </transition-group>
+  </div>
 </template>
 <script>
 import items from "../assets/items.json";
 import Item from "./Item.vue";
+import ItemTooltip from "./ItemTooltip.vue";
 
 export default {
   components: {
-    Item
+    Item,
+    ItemTooltip
   },
+  data: () => ({ hovedItem: null, tooltipTarget: null, showTooltip: false }),
   computed: {
     items() {
       return items
@@ -41,6 +55,14 @@ export default {
   methods: {
     openItem(item) {
       this.$emit("openItem", item);
+    },
+    mouseOver(index) {
+      this.hovedItem = this.items[index];
+      this.tooltipTarget = this.$refs.items[index].$el;
+      this.showTooltip = true;
+    },
+    mouseLeave() {
+      this.showTooltip = false;
     }
   }
 };

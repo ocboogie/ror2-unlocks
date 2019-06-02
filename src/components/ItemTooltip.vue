@@ -1,10 +1,12 @@
 <template>
-  <div class="item-tooltip">
+  <div class="item-tooltip" role="tooltip">
+    <div class="arrow" x-arrow />
     <div class="name">{{ name }}</div>
     <description-renderer :description="description" />
   </div>
 </template>
 <script>
+import Popper from "popper.js";
 import DescriptionRenderer from "./DescriptionRenderer.vue";
 
 export default {
@@ -19,6 +21,22 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    target: {
+      type: HTMLElement,
+      required: true
+    }
+  },
+  mounted() {
+    this.popper = new Popper(this.target, this.$el);
+  },
+  updated() {
+    this.popper.reference = this.target;
+    this.popper.update();
+  },
+  beforeDestroy() {
+    if (this.popper) {
+      this.popper.destroy();
     }
   }
 };
@@ -34,20 +52,15 @@ export default {
   border-radius: 6px;
   color: #bdbdbd;
   background-color: #282939;
+  pointer-events: none;
 
   .name {
     font-size: 1.25rem;
     font-weight: lighter;
     margin-bottom: 0.5rem;
   }
-}
-</style>
-<style lang="scss">
-.tooltip {
-  pointer-events: none;
-  display: block !important;
 
-  .tooltip-arrow {
+  .arrow {
     width: 0;
     height: 0;
     border-style: solid;
@@ -60,7 +73,7 @@ export default {
   &[x-placement^="top"] {
     margin-bottom: 5px;
 
-    .tooltip-arrow {
+    .arrow {
       border-width: 5px 5px 0 5px;
       border-left-color: transparent !important;
       border-right-color: transparent !important;
@@ -75,7 +88,7 @@ export default {
   &[x-placement^="bottom"] {
     margin-top: 5px;
 
-    .tooltip-arrow {
+    .arrow {
       border-width: 0 5px 5px 5px;
       border-left-color: transparent !important;
       border-right-color: transparent !important;
@@ -84,36 +97,6 @@ export default {
       left: calc(50% - 5px);
       margin-top: 0;
       margin-bottom: 0;
-    }
-  }
-
-  &[x-placement^="right"] {
-    margin-left: 5px;
-
-    .tooltip-arrow {
-      border-width: 5px 5px 5px 0;
-      border-left-color: transparent !important;
-      border-top-color: transparent !important;
-      border-bottom-color: transparent !important;
-      left: -5px;
-      top: calc(50% - 5px);
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-
-  &[x-placement^="left"] {
-    margin-right: 5px;
-
-    .tooltip-arrow {
-      border-width: 5px 0 5px 5px;
-      border-top-color: transparent !important;
-      border-right-color: transparent !important;
-      border-bottom-color: transparent !important;
-      right: -5px;
-      top: calc(50% - 5px);
-      margin-left: 0;
-      margin-right: 0;
     }
   }
 }

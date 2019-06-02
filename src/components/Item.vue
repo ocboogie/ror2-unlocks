@@ -1,28 +1,17 @@
 <template>
-  <v-popover trigger="hover">
-    <img
-      class="item"
-      width="96"
-      height="96"
-      :src="icon"
-      :alt="name"
-      tabindex="0"
-      @click="openItem"
-      @keyup.enter="openItem"
-    />
-
-    <item-tooltip :name="name" :description="description" slot="popover" />
-  </v-popover>
+  <img
+    class="item"
+    width="96"
+    height="96"
+    :src="icon"
+    :alt="name"
+    tabindex="0"
+    @click="openItem"
+    @keyup.enter="openItem"
+  />
 </template>
 <script>
-import { VPopover } from "v-tooltip";
-import ItemTooltip from "./ItemTooltip.vue";
-
 export default {
-  components: {
-    ItemTooltip,
-    VPopover
-  },
   props: {
     codeName: {
       type: String,
