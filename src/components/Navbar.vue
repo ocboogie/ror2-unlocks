@@ -20,7 +20,7 @@
   padding: 1rem 0;
   margin-bottom: 1.5rem;
 
-  background-color: rgb(55, 56, 72, 0.25);
+  background-color: rgba(55, 56, 72, 0.25);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
   .navbar-inner {
