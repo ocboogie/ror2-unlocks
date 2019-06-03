@@ -1,6 +1,5 @@
 {
-  "name": "gridsome-ror2-unlocks",
-  "private": true,
+  "name": "ror2-unlocks",
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
