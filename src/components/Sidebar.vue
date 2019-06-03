@@ -1,7 +1,13 @@
 <template>
   <div class="sidebar">
     <div class="icon-container" v-if="icon">
-      <img :src="icon" alt="item icon" class="icon" />
+      <img
+        v-show="iconLoaded"
+        :src="icon"
+        alt="item icon"
+        class="icon"
+        @load="iconLoaded = true"
+      />
     </div>
 
     <div class="name" v-if="name">{{ name }}</div>
@@ -32,6 +38,7 @@ export default {
   components: {
     DescriptionRenderer
   },
+  data: () => ({ iconLoaded: false }),
   computed: {
     displayType() {
       if (this.type === "equipment") {
@@ -47,6 +54,18 @@ export default {
         return;
       }
       return require(`~/assets/icons-hi-res/${this.iconName}.png`);
+    }
+  },
+  watch: {
+    iconName: {
+      handler(val, oldVal) {
+        if (val === oldVal || !this.icon) {
+          return;
+        }
+
+        this.iconLoaded = false;
+      },
+      immediate: true
     }
   },
   props: {
