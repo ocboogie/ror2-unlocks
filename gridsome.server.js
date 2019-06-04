@@ -16,17 +16,5 @@ module.exports = function(api) {
       item.index = index;
       items.addNode(item);
     }
-    // const contentType = addContentType({
-    //   typeName: "MyData"
-    // });
-
-    // items.addNode({
-    //   title: "Lorem ipsum dolor sit amet.",
-    //   customField: "..."
-    // });
-  });
-
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api
   });
 };
