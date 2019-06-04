@@ -10,7 +10,8 @@
   "dependencies": {
     "debounce": "^1.2.0",
     "gridsome": "^0.6.0",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
+    "promise-polyfill": "^8.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
