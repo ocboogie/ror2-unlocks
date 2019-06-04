@@ -41,10 +41,10 @@ module.exports = {
       .loader("file-loader")
       .options({
         name: "img/[name].[hash:8].[ext]"
-      });
-
-    // Exclude icons from the origin rule
-    config.module
+      })
+      .end()
+      .end()
+      // Exclude icons from the origin rule
       .rule("images")
       .exclude.add(iconsPath)
       .end();
