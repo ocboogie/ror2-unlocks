@@ -7,7 +7,12 @@
       <div v-if="expanded" class="page-darken" @click="closeItem" />
     </transition>
 
-    <sidebar class="sidebar" :class="{ expanded }" v-bind="openedItem" />
+    <sidebar
+      class="sidebar"
+      :class="{ expanded }"
+      :item="openedItem"
+      @closeItem="closeItem"
+    />
 
     <ClientOnly>
       <background id="background" />
@@ -36,6 +41,11 @@ export default {
       this.expanded = true;
     },
     closeItem() {
+      // Only close the item to show the game info on large displayrs, because
+      // on mobile it will flicker the game info when the animation is running
+      if (window.innerWidth > 960) {
+        this.openedItem = null;
+      }
       this.expanded = false;
     },
     searched: debounce(function(value) {

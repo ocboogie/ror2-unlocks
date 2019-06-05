@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <div class="icon-container" v-if="icon">
+    <div class="icon-container" v-if="this.icon">
       <img
         v-show="iconLoaded"
         :src="icon"
@@ -10,56 +10,88 @@
       />
     </div>
 
-    <div class="name" v-if="name">{{ name }}</div>
-    <div class="type" v-if="tier || type === 'equipment'">
-      {{ displayType }}
-    </div>
-
-    <template v-if="unlock">
-      <div class="label">
-        Unlock
+    <template v-if="item">
+      <div class="name">{{ item.name }}</div>
+      <div class="type">
+        {{ displayType }}
       </div>
-      <span class="info-body">{{ unlock }}</span>
+
+      <template v-if="item.unlock">
+        <div class="label">
+          Unlock
+        </div>
+        <span class="info-body">{{ item.unlock }}</span>
+      </template>
+
+      <template>
+        <div class="label">
+          Description
+        </div>
+        <description-renderer
+          class="info-body"
+          :description="item.description"
+        />
+      </template>
+
+      <base-button
+        class="close-button"
+        @click.native="$emit('closeItem')"
+        @keyup.enter.native="$emit('closeItem')"
+      >
+        Close
+      </base-button>
     </template>
-
-    <template v-if="description">
-      <div class="label">
-        Description
+    <template v-else>
+      <h2 class="header">What is Risk of Rain 2?</h2>
+      <div class="game-description">
+        Risk of Rain 2 is an upcoming third-person shooter roguelike video game
+        being developed by Hopoo Games. It is a sequel to Risk of Rain, and is
+        being supported by Gearbox Publishing. The game was released in an early
+        access version in March 2019, with Hopoo Games anticipating about a year
+        of work before they push a final release.
       </div>
-      <description-renderer class="info-body" :description="description" />
+      <img class="game-banner" src="../assets/ROR2Banner.jpg" />
     </template>
   </div>
 </template>
 <script>
 import tierDisplay from "../assets/tierDisplay.json";
 import DescriptionRenderer from "./DescriptionRenderer.vue";
+import BaseButton from "./BaseButton.vue";
 
 export default {
   components: {
-    DescriptionRenderer
+    DescriptionRenderer,
+    BaseButton
   },
   data: () => ({ iconLoaded: false }),
   computed: {
     displayType() {
-      if (this.type === "equipment") {
-        if (this.isLunar) {
+      if (!this.item) {
+        return null;
+      }
+      if (this.item.type === "equipment") {
+        if (this.item.isLunar) {
           return `${tierDisplay["Lunar"]} Equipment`;
         }
         return "Equipment";
       }
-      return `${tierDisplay[this.tier]} Item`;
+      return `${tierDisplay[this.item.tier]} Item`;
     },
     icon() {
-      if (!this.iconName) {
+      if (!this.item) {
+        return null;
+      }
+      if (!this.item.iconName) {
         return;
       }
-      return require(`~/assets/icons-hi-res/${this.iconName}.png`);
+      return require(`~/assets/icons-hi-res/${this.item.iconName}.png`);
     }
   },
   watch: {
-    iconName: {
-      handler(val, oldVal) {
-        if (val === oldVal || !this.icon) {
+    item: {
+      handler(item, oldItem) {
+        if (!item || item === oldItem || !item.icon) {
           return;
         }
 
@@ -69,32 +101,8 @@ export default {
     }
   },
   props: {
-    name: {
-      type: String,
-      default: null
-    },
-    tier: {
-      type: String,
-      default: null
-    },
-    description: {
-      type: String,
-      default: null
-    },
-    type: {
-      type: String,
-      default: null
-    },
-    isLunar: {
-      type: Boolean,
-      default: false
-    },
-    unlock: {
-      type: String,
-      default: null
-    },
-    iconName: {
-      type: String,
+    item: {
+      type: Object,
       default: null
     }
   }
@@ -123,6 +131,19 @@ export default {
     }
   }
 
+  .header {
+    font-weight: lighter;
+  }
+
+  .game-description {
+    text-align: left;
+  }
+
+  .game-banner {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
   .name {
     font-size: 2rem;
     font-weight: lighter;
@@ -143,6 +164,10 @@ export default {
   }
   .info-body {
     font-size: 1.1rem;
+  }
+
+  .close-button {
+    margin-top: 2rem;
   }
 }
 </style>
