@@ -82,6 +82,7 @@ query Item {
         icon
         type
         unlock
+        tier
       }
     }
   }
