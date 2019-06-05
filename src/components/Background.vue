@@ -3,17 +3,17 @@
 </template>
 <script>
 import debounce from "debounce";
-const particles = 25;
+const particles = 100;
 const backgroundColor = "#242531";
 
-const sizeMin = 1;
-const sizeMax = 5;
+const sizeMin = 2;
+const sizeMax = 9;
 
-const opacityMin = 0.1;
-const opacityMax = 0.5;
+const opacityMin = 0.5;
+const opacityMax = 0.8;
 
-const speedMin = 3;
-const speedMax = 10;
+const speedMin = 4;
+const speedMax = 15;
 
 const fadeIn = 5000;
 
