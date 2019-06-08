@@ -1,8 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-// Waiting on https://github.com/gridsome/gridsome/issues/480
-import "promise-polyfill/src/polyfill";
 import DefaultLayout from "~/layouts/Default.vue";
 
 export default function(Vue, { head }) {
