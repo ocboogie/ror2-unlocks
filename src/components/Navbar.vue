@@ -4,6 +4,8 @@
       <!-- TODO: Move search to it's own component -->
       <input
         class="search"
+        role="search"
+        aria-label="Search"
         placeholder="Search"
         @input="$emit('searched', $event.target.value)"
       />
