@@ -50,7 +50,7 @@
         access version in March 2019, with Hopoo Games anticipating about a year
         of work before they push a final release.
       </div>
-      <img class="game-banner" src="../assets/ROR2Banner.jpg" />
+      <g-image class="game-banner" src="../assets/ROR2Banner.jpg" />
     </template>
   </div>
 </template>
